@@ -11,5 +11,9 @@ A crawler for images, torrents and videos on [t66y.com](t66y.com)
     
     # 爬達蓋爾的旗幟的帖子，保存帖子标题和图片地址
     
-    [proxychians4] scrapy crawl DaGaiEr [-o dagaier.jsonl]
+    [proxychains4] scrapy crawl DaGaiEr [-o dagaier.jsonl]
+    
+    # 爬新時代的我們的帖子，保存帖子标题和图片地址
+    
+    [proxychains4] scrapy crawl XinShiDai [-o xinshidai,jsonl]
     
