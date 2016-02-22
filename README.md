@@ -48,16 +48,16 @@ pipeline 还没写，需要把输出保存到文件的话加一个 -o 参数，�
                   't_image_list'    : list  , 大图源地址
 
     XinShiDai   : 't_title'         : string, 标题
-                  't_image_list'    : list,   大图源地址
+                  't_image_list'    : list  , 大图源地址
                   
     YaZhouWuMa  : 't_title'         : string, 标题
                   't_url'           : string, url
-                  't_image_list'    : list,   大图源地址（会自动把 imgchili 和 imagetwist 的缩略图转为原图）
-                  't_torrent_list'  : list,   种子地址
+                  't_image_list'    : list  , 大图源地址（会自动把 imgchili 和 imagetwist 的缩略图转为原图）
+                  't_torrent_list'  : list  , 种子地址
 
     YaZhouYouMa : 't_title'         : string, 标题
                   't_url'           : string, url
-                  't_image_list'    : list,   大图源地址（会自动把 imgchili 和 imagetwist 的缩略图转为原图）
-                  't_torrent_list'  : list,   种子地址
+                  't_image_list'    : list  , 大图源地址（会自动把 imgchili 和 imagetwist 的缩略图转为原图）
+                  't_torrent_list'  : list  , 种子地址
     
     YaZhouWuMaZhuanTie 和 YaZhouYouMaZhuanTie 分别是上面两个板块的子板，直接使用父板块的数据格式。
