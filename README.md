@@ -45,7 +45,7 @@ pipeline 还没写，需要把输出保存到文件的话加一个 -o 参数，�
 默认格式为 jsonline，python 可以用 ast.literal_eval 读取。各爬虫抓的数据不同，可以查看 items.py 内的定义。目前主要有：
 
     DaGaiEr     : 't_title'         : string, 标题
-                  't_image_list'    : string, 大图源地址
+                  't_image_list'    : list  , 大图源地址
 
     XinShiDai   : 't_title'         : string, 标题
                   't_image_list'    : list,   大图源地址
