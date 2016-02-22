@@ -3,13 +3,13 @@
 import scrapy
 import re
 
-from t66ySpider.items import T66YspiderYazhouwumaItem
+from t66ySpider.items import T66YspiderYazhouyoumaItem
 
 
-class t66yYazhouwumaSpider(scrapy.Spider):
-    name = 'YaZhouWuMa'
+class t66yYazhouyoumaSpider(scrapy.Spider):
+    name = 'YaZhouYouMa'
     allowed_domains = ['t66y.com']
-    start_urls = ["http://t66y.com/thread0806.php?fid=2"]
+    start_urls = ["http://t66y.com/thread0806.php?fid=15"]
     unicode_next_page = u'\u4e0b\u4e00\u9801'
     imgchili_net = re.compile(r'''imgchili''')
     imagetwist_com = re.compile(r'''imagetwist''')
@@ -29,7 +29,7 @@ class t66yYazhouwumaSpider(scrapy.Spider):
         yield scrapy.Request(next_page_url, callback=self.parse)
 
     def parse_thread(self, response):
-        item = T66YspiderYazhouwumaItem()
+        item = T66YspiderYazhouyoumaItem()
         item['t_title']         = response.selector.xpath('string(//title)')[0].extract()
         item['t_url']           = response.url
 

@@ -18,4 +18,7 @@ class T66YspiderYazhouwumaItem(scrapy.Item):
     t_torrent_list  = scrapy.Field()
 
 class T66YspiderYazhouyoumaItem(scrapy.Item):
-    pass
+    t_title         = scrapy.Field()
+    t_url           = scrapy.Field()
+    t_image_list    = scrapy.Field()
+    t_torrent_list  = scrapy.Field()
