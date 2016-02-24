@@ -61,3 +61,17 @@ pipeline 还没写，需要把输出保存到文件的话加一个 -o 参数，�
                   't_torrent_list'  : list  , 种子地址
     
     YaZhouWuMaZhuanTie 和 YaZhouYouMaZhuanTie 分别是上面两个板块的子板，直接使用父板块的数据格式。
+    
+# 其它
+
+草榴社区的种子都是传到 rmdown 的，这个爬虫只抽取种子地址，不自动下载种子。如需自动下载，可调用
+[rmdown.pl](https://github.com/eccstartup/caoliu-synchronizer/blob/master/rmdown.pl)
+
+图片自动下载默认没有开启，如需开启，在所有文件中把所有 `t_image_list` 替换为 `image_urls`, 
+在 settings.py 中加入两行
+    
+    ITEM_PIPELINES = {'scrapy.pipelines.images.ImagesPipeline': 1} 
+    IMAGES_STORE = '/存储目录'
+
+NAS 剩余空间小于 2TB 时慎重开启。
+
