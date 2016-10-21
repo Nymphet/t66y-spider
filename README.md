@@ -38,7 +38,7 @@ scrapy 支持搭配 shadowsocks, tor 等等各种 socks 代理和各种 http 代
 
 pipeline 还没写，需要把输出保存到文件的话加一个 -o 参数，详情可参考 scrapy 文档，默认格式为 jsonline。命令格式参考下面这条
 
-    proxychians4 scrapy crawl DaGaiEr -o DaGaiErDeQiZhi.json
+    proxychains4 scrapy crawl DaGaiEr -o DaGaiErDeQiZhi.jsonline
 
 # 数据格式
 
@@ -72,6 +72,3 @@ pipeline 还没写，需要把输出保存到文件的话加一个 -o 参数，�
     
     ITEM_PIPELINES = {'scrapy.pipelines.images.ImagesPipeline': 1} 
     IMAGES_STORE = '/存储目录'
-
-NAS 剩余空间小于 2TB 时慎重开启。
-
